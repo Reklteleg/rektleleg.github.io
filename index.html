@@ -23,26 +23,23 @@
       background-size: contain; background-repeat: no-repeat; background-position: center;
       cursor: pointer; animation: pulse 1.3s infinite;
     }
-    @keyframes pulse {
-      0%,100% { transform: translate(-50%,-50%) scale(0.9); }
-      50%     { transform: translate(-50%,-50%) scale(1.24); }
-    }
+    @keyframes pulse { 0%,100% { transform: translate(-50%,-50%) scale(0.9) } 50% { transform: translate(-50%,-50%) scale(1.24) } }
   </style>
 
   <!-- VK Ads Pixel (Top.Mail.Ru counter) -->
   <script type="text/javascript">
     var _tmr = window._tmr || (window._tmr = []);
-    _tmr.push({ id: 3688110, type: 'pageView', start: (new Date()).getTime() });
+    _tmr.push({ id: 3688674, type: 'pageView', start: (new Date()).getTime() });
     (function (d, w, id) {
       if (d.getElementById(id)) return;
-      var ts = d.createElement('script'); ts.type = 'text/javascript'; ts.async = true; ts.id = id;
+      var ts = d.createElement('script'); ts.type='text/javascript'; ts.async=true; ts.id=id;
       ts.src = 'https://top-fwz1.mail.ru/js/code.js';
-      var f = function () { var s = d.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ts, s); };
+      var f = function(){ var s=d.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ts,s); };
       if (w.opera == '[object Opera]') { d.addEventListener('DOMContentLoaded', f, false); } else { f(); }
     })(document, window, 'tmr-code');
   </script>
   <noscript>
-    <div><img src="https://top-fwz1.mail.ru/counter?id=3688110;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div>
+    <div><img src="https://top-fwz1.mail.ru/counter?id=3688674;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div>
   </noscript>
   <!-- /VK Ads Pixel -->
 </head>
@@ -56,16 +53,16 @@
   <script>
     setTimeout(function(){ window.location.href = "https://t.me/kotyatnitsa/481"; }, 9000);
 
-    // Событие в VK Ads (Top.Mail.Ru) + метрика при клике на лапку
+    // Клик по лапке: событие в VK Ads + Метрика
     function trackTGClick(){
       if (window._tmr && Array.isArray(_tmr)) {
-        _tmr.push({ id: 3688110, type: 'reachGoal', goal: 'go_tg' });
+        _tmr.push({ id: 3688674, type: 'reachGoal', goal: 'go_tg' });
       }
       if (window.ym) { ym(101949561, 'reachGoal', 'tg_click'); }
     }
   </script>
 
-  <!-- Яндекс.Метрика (если нужна) -->
+  <!-- Яндекс.Метрика (по желанию) -->
   <script type="text/javascript">
     (function(m,e,t,r,i,k,a){
       m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -73,7 +70,6 @@
       k=e.createElement(t),a=e.getElementsByTagName(t)[0];
       k.async=1; k.src=r; a.parentNode.insertBefore(k,a);
     })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
-
     ym(101949561, 'init', { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true });
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/101949561" style="position:absolute; left:-9999px;" alt=""/></div></noscript>
